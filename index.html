@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestaodeestoque</title>
+
+   <link rel="stylesheet" type="text/css" href="style.css" />
+   <script src="gestao.js" type="text/javascript"></script>
+</head>
+<body>
+    <center>
+    <h1> Gestão de Estoque</h1>
+    
+    <table>
+        <tr> 
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();">
+                <div>
+                    <label>Cógigo id</label>
+                    <input type="text" name="codigoid" id="codigoid">
+                    
+                </div>
+                <div>
+                    <label> Produto</label>
+                    <input type="text" name="produto" id="produto">
+                    
+                </div>
+                <div>
+                    <label>Descrição</label>
+                    <input type="text" name="desricao" id="descricao">
+                    
+                </div>
+                <div>
+                    <label>Cor</label>
+                    <input type="text" name="cor" id="cor"> 
+                    
+                </div>
+                <div>
+                    <label>Valor</label>
+                    <input type="text" name="valor" id="valor">
+                    
+                </div>
+                <div>
+                <center>
+                    <input type="submit" value="Cadastrar" id="cadastrar">
+                </center>
+                </div>
+                
+                </form>
+            </td>
+            
+            <table class="list" id="estoque">
+                <thead> 
+                    <br>
+                    <tr>
+                        <th>Código id</th>
+                        <th>Produto</th>
+                        <th>Descrição</th>
+                        <th>Cor</th>
+                        <th>Valor</th>
+                        <th>Editar | Excluir</th> 
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </tr>
+    </table>
+</center>
+
+</body>
+</html>
